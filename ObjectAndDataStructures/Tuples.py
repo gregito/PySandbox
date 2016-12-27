@@ -22,5 +22,8 @@ print(t2.count(1))              # 2
 
 
 # adott elem indexének visszaadása:
-print(t2.index("alma"))         # 2
+t3 = ("szilva", "korte", "alma", "barack", "alma")
+print(t3.index("alma"))         # 2
 
+# megjegyzés: a listához, ha az index keresésekor olyan elemre keresünk, mely többször szerepel az objektumban,
+# az első előforduló elem indexét kapjuk vissza
