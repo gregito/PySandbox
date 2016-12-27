@@ -12,13 +12,14 @@ print(file.read())         # kiírja a txt tartalmát
 print(file.read())         # semmit nem ír ki
 
 # miért nem ír ki semmit?
-# mert az f objektum, mely tartalmazza a txt fájunk tartalmát. kiolvastuk mi van benne, és a képzeletbeli
-# kurzor most a file végén van, így az f.read() utasításra nem tud további tartalmat visszaadni.
+# mert az f objektumból - mely tartalmazza a txt fájunk tartalmát - kiolvastuk azt ami benne volt/van, és a képzeletbeli
+# kurzor most a file végén van, így az f.read() utasítás nem tud további tartalmat visszaadni.
 # hogy újra ki tudjuk olvasni, ismét vissza kell állítani az elejére ( vagy egy kívánt pozícióra )
 # erre jó a .seek(index) parancs
-file.seek(0)
 
-print(file.read())         # kiírja a txt tartalmát
+file.seek(0)               # visszaáll a fájl 0. indexére
+
+print(file.read())         # újra elérhető lesz a tartalom, kiírja a txt szövegét
 
 file.seek(0)
 print(file.readlines())    # visszaadja a txt tartalmát egy lista formájában úgy, hogy minden sor a lista egy eleme
