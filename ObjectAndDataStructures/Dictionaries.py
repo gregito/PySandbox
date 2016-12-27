@@ -69,8 +69,8 @@ print(e_dict)               # {'first': 'firstValue'}
 
 
 
-""" Nested dictionaries """
-# a listákhoz hasonlóan itt is könnyen egymásba ágyazhatóak a dictionariy-k
+""" Egymásba ágyazott szótárak """
+# a listákhoz hasonlóan itt is könnyen egymásba ágyazhatóak a szótárak
 
 m_dict = {'k1': {'n_key1': {'s_n_key1': 's_n_value1'}}, 'k2': {'n_key2': {'s_n_key2': 's_n_value2'}}}
 
