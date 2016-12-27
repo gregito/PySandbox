@@ -56,5 +56,5 @@ print(hw.upper())       # 'HELLO WORLD'
 
 print(hw.lower())       # 'hello world'
 
-print(hw.split('e'))    # ['H', 'llo World']  –  a megadott elem kivetlével egyszerre szétválasztja és visszaad x tömböt
+print(hw.split('e'))    # ['H', 'llo World']  –  a megadott elem kivetlével egyszerre szétválasztja és visszaad x listát
 
